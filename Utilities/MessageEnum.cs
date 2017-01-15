@@ -1,5 +1,6 @@
 namespace Utilities
 {
+	[System.Flags]
     public enum MessageEnum : byte
     {
         Unassigned = 0x00,
