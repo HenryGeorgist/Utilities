@@ -33,7 +33,11 @@
     <Compile Include="Logger\Log.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="MessageHub.cs" />
-    <Compile Include="MessageEnum.cs" />
+    <Compile Include="ActivityLogger\ActivityLog.cs" />
+    <Compile Include="Logger\ErrorEnum.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ActivityLogger\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

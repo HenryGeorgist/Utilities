@@ -3,7 +3,7 @@ namespace Utilities
 {
 	public static class MessageHub
 	{
-		public static void ReportMessage(AbstractMessage message)
+		public static void ReportMessage(Message message)
 		{
 			switch (message.GetType().Name)
 			{

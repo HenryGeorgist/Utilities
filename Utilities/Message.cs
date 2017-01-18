@@ -1,29 +1,20 @@
 ﻿using System;
 namespace Utilities
 {
-	public abstract class AbstractMessage
+	public class Message
 	{
-		private readonly MessageEnum _MessageEnum;
 		private readonly string _Message;
 		private readonly System.DateTime _DateTime;
-		public MessageEnum MessageEnum
-		{
-			get
-			{
-				return _MessageEnum;
-			}
-		}
-		public string Message
+		public string message
 		{
 			get
 			{
 				return _Message;
 			}
 		}
-		protected AbstractMessage(string message, MessageEnum state)
+		protected Message(string theMessage)
 		{
-			_Message = message;
-			_MessageEnum = state;
+			_Message = theMessage;
 			_DateTime = System.DateTime.Now;
 		}
 	}
